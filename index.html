@@ -4,16 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify - Web Player (Home)</title>
+  <!-- External stylesheet (not inline or internal) -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- ======================================================================
+       SEMANTIC TAG: <header> & <nav>
+       Navbar: Logo + Home, Browse, Playlist, Premium, Support, Download
+       ====================================================================== -->
   <header>
     <nav class="navbar">
+      <!-- Spotify Logo linking to Home -->
       <div class="logo">
         <a href="index.html">Spotify</a>
       </div>
 
+      <!-- Navigation Links -->
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="browse.html">Browse</a></li>
@@ -23,59 +30,91 @@
         <li><a href="#download">Download</a></li>
       </ul>
 
+      <!-- Sign up button linking to optional login/signup page -->
       <div class="nav-btn">
         <a href="login.html" class="btn btn-green">Sign up free</a>
       </div>
     </nav>
   </header>
 
+  <!-- ======================================================================
+       SEMANTIC TAG: <main>
+       Main page content starts here
+       ====================================================================== -->
   <main>
+
+    <!-- HERO SECTION (ID selector requirement: #hero)
+         Heading + subtext + call-to-action buttons -->
     <section id="hero">
       <h1>Listening is everything</h1>
       <p>Millions of songs and podcasts. No credit card needed.</p>
-      <a href="login.html" class="btn btn-green">Sign up free</a>
-      <a href="browse.html" class="btn btn-outline">Explore Browse</a>
+      <div class="hero-actions">
+        <a href="login.html" class="btn btn-green">Sign up free</a>
+        <a href="browse.html" class="btn btn-outline">Explore Browse</a>
+      </div>
     </section>
 
+    <!-- FEATURED PLAYLISTS SECTION
+         Row of featured playlist cards using local images from images/ folder -->
     <section class="section">
-      <h2>Featured Playlists</h2>
+      <div class="section-header">
+        <h2>Featured Playlists</h2>
+        <a href="browse.html" class="see-all-link">Show all</a>
+      </div>
 
       <div class="cards-container">
-        <!-- Playlist Card 1 -->
+        <!-- Playlist Card 1: Today's Top Hits -->
         <article class="card">
           <a href="playlist.html">
-            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=400&fit=crop" alt="Today's Top Hits">
+            <div class="card-img-wrap">
+              <img src="images/top-hits.svg" alt="Today's Top Hits Playlist Cover">
+            </div>
             <h3>Today's Top Hits</h3>
+            <p>Popular songs and chart-topping favorites.</p>
           </a>
         </article>
 
-        <!-- Playlist Card 2 -->
+        <!-- Playlist Card 2: Pop Hits -->
         <article class="card">
           <a href="playlist.html">
-            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=400&fit=crop" alt="Pop Hits">
+            <div class="card-img-wrap">
+              <img src="images/pop-hits.svg" alt="Pop Hits Playlist Cover">
+            </div>
             <h3>Pop Hits</h3>
+            <p>Catchy beats and the hottest global pop releases.</p>
           </a>
         </article>
 
-        <!-- Playlist Card 3 -->
+        <!-- Playlist Card 3: Rock Classics -->
         <article class="card">
           <a href="playlist.html">
-            <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=400&h=400&fit=crop" alt="Rock Classics">
+            <div class="card-img-wrap">
+              <img src="images/rock-classics.svg" alt="Rock Classics Playlist Cover">
+            </div>
             <h3>Rock Classics</h3>
+            <p>Rock legends and epic guitar anthems.</p>
           </a>
         </article>
 
-        <!-- Playlist Card 4 -->
+        <!-- Playlist Card 4: Chill Hits -->
         <article class="card">
           <a href="playlist.html">
-            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=400&h=400&fit=crop" alt="Chill Hits">
+            <div class="card-img-wrap">
+              <img src="images/chill-hits.svg" alt="Chill Hits Playlist Cover">
+            </div>
             <h3>Chill Hits</h3>
+            <p>Kick back to relaxing, cozy acoustic and lo-fi vibes.</p>
           </a>
         </article>
       </div>
     </section>
+
   </main>
 
+  <!-- ======================================================================
+       SEMANTIC TAG: <footer>
+       Footer with grouped links & copyright
+       ====================================================================== -->
   <footer>
     <div class="footer-content">
       <div class="footer-column">
@@ -113,3 +152,4 @@
 
 </body>
 </html>
+
