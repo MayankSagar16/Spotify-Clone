@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify - Browse</title>
+  <!-- External stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- ======================================================================
+       SEMANTIC TAG: <header> & <nav>
+       Navbar with link back to Home
+       ====================================================================== -->
   <header>
     <nav class="navbar">
       <div class="logo">
@@ -29,37 +34,44 @@
     </nav>
   </header>
 
+  <!-- ======================================================================
+       SEMANTIC TAG: <main>
+       Heading "Browse all" + Genre cards with local SVG images
+       ====================================================================== -->
   <main class="section">
     <h1 class="browse-heading">Browse all</h1>
 
-    <!-- Genre cards: Pop, Hip-Hop, Chill, Workout with online images -->
+    <!-- Genre cards linking to Playlist page -->
     <div class="genre-grid">
-      <!-- Pop -->
+      <!-- 1. Pop -->
       <a href="playlist.html" class="genre-card pop">
         <span>Pop</span>
-        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=160&h=160&fit=crop" alt="Pop Music">
+        <img src="images/genre-pop.svg" alt="Pop Music Category Artwork">
       </a>
 
-      <!-- Hip-Hop -->
+      <!-- 2. Hip-Hop -->
       <a href="playlist.html" class="genre-card hiphop">
         <span>Hip-Hop</span>
-        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=160&h=160&fit=crop" alt="Hip-Hop Music">
+        <img src="images/genre-hiphop.svg" alt="Hip-Hop Music Category Artwork">
       </a>
 
-      <!-- Chill -->
+      <!-- 3. Chill -->
       <a href="playlist.html" class="genre-card chill">
         <span>Chill</span>
-        <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=160&h=160&fit=crop" alt="Chill Music">
+        <img src="images/genre-chill.svg" alt="Chill Music Category Artwork">
       </a>
 
-      <!-- Workout -->
+      <!-- 4. Workout -->
       <a href="playlist.html" class="genre-card workout">
         <span>Workout</span>
-        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=160&h=160&fit=crop" alt="Workout Music">
+        <img src="images/genre-workout.svg" alt="Workout Music Category Artwork">
       </a>
     </div>
   </main>
 
+  <!-- ======================================================================
+       SEMANTIC TAG: <footer>
+       ====================================================================== -->
   <footer>
     <div class="footer-content">
       <div class="footer-column">
