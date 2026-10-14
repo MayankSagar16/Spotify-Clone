@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spotify - Playlist Details</title>
+  <title>Today's Top Hits - Playlist by Spotify</title>
+  <!-- External stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- ======================================================================
+       SEMANTIC TAG: <header> & <nav>
+       Navbar with link back to Home
+       ====================================================================== -->
   <header>
     <nav class="navbar">
       <div class="logo">
@@ -29,16 +34,23 @@
     </nav>
   </header>
 
+  <!-- ======================================================================
+       SEMANTIC TAG: <main>
+       Playlist header with local image + Play button + Track table
+       ====================================================================== -->
   <main class="section">
-    <!-- Playlist Header with Online High-Res Cover -->
+
+    <!-- Playlist Header (uses images/top-hits.svg) -->
     <div class="playlist-header">
-      <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=400&fit=crop" alt="Today's Top Hits Cover" class="playlist-cover">
+      <img src="images/top-hits.svg" alt="Today's Top Hits Official Playlist Cover" class="playlist-cover">
 
       <div id="playlist-info">
-        <p>PUBLIC PLAYLIST</p>
+        <p class="playlist-type">Public Playlist</p>
         <h1>Today's Top Hits</h1>
-        <p>Popular songs and chart-topping favorites.</p>
-        <p><strong>Spotify</strong> &bull; 34,512,890 likes &bull; 5 songs, 16 min</p>
+        <p class="playlist-description">Jung Kook is on top of the Hottest 50! Popular songs and chart-topping favorites.</p>
+        <p class="playlist-meta">
+          <strong>Spotify</strong> &bull; 34,582,190 likes &bull; 5 songs, 16 min
+        </p>
       </div>
     </div>
 
@@ -90,8 +102,12 @@
         </tr>
       </tbody>
     </table>
+
   </main>
 
+  <!-- ======================================================================
+       SEMANTIC TAG: <footer>
+       ====================================================================== -->
   <footer>
     <div class="footer-content">
       <div class="footer-column">
