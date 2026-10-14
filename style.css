@@ -1,0 +1,390 @@
+/* ==========================================================================
+   Spotify Website Clone - style.css
+   DevCamp 2.0 - Task 1: Multi-Page Static Website (HTML & CSS Only)
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Button Classes */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-green {
+  background-color: #1DB954;
+  color: #191414;
+}
+
+.btn-green:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn-outline:hover {
+  background-color: #ffffff;
+  color: #191414;
+}
+
+/* Navbar */
+header {
+  background-color: #191414;
+  border-bottom: 1px solid #282828;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1DB954;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #b3b3b3;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #1DB954;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(180deg, #1e3a29 0%, #121212 100%);
+  text-align: center;
+  padding: 80px 20px 60px;
+  border-bottom: 1px solid #282828;
+}
+
+#hero h1 {
+  font-size: 46px;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 18px;
+  color: #b3b3b3;
+  margin-bottom: 25px;
+}
+
+/* Section & Cards */
+.section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #181818;
+  padding: 16px;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  max-width: 260px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: #282828;
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+/* Browse Page */
+.browse-heading {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.genre-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.genre-card {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 220px;
+  height: 140px;
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.genre-card img {
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  width: 72px;
+  height: 72px;
+  border-radius: 6px;
+  transform: rotate(25deg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.genre-card:hover {
+  transform: scale(1.03);
+}
+
+.genre-card:hover img {
+  transform: rotate(20deg) scale(1.08);
+}
+
+.pop { background-color: #8c1932; }
+.hiphop { background-color: #bc5900; }
+.chill { background-color: #27856a; }
+.workout { background-color: #148a08; }
+
+/* Playlist Details */
+.playlist-header {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  background-color: #1e3a29;
+  padding: 40px 30px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 25px;
+}
+
+.playlist-cover {
+  width: 190px;
+  height: 190px;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+  display: block;
+}
+
+#playlist-info h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+#playlist-info p {
+  color: #b3b3b3;
+  margin-bottom: 8px;
+}
+
+.play-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #1DB954;
+  color: #191414;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 25px 0;
+  transition: 0.3s ease;
+}
+
+.play-btn:hover {
+  background-color: #1ed760;
+  transform: scale(1.08);
+}
+
+.track-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.track-table th {
+  color: #b3b3b3;
+  border-bottom: 1px solid #282828;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.track-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #1f1f1f;
+  color: #b3b3b3;
+}
+
+.track-table tr:hover td {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+.track-title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Login Form */
+#login-box {
+  max-width: 420px;
+  margin: 60px auto;
+  background-color: #181818;
+  padding: 40px 30px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #282828;
+}
+
+#login-box h1 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #404040;
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #1DB954;
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #191414;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 1px solid #282828;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column h4 {
+  color: #b3b3b3;
+  margin-bottom: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #b3b3b3;
+  font-size: 13px;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  color: #727272;
+  font-size: 12px;
+  margin-top: 30px;
+}
