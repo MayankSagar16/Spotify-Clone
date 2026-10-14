@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg-rock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#800000"/>
+      <stop offset="50%" stop-color="#191414"/>
+      <stop offset="100%" stop-color="#2a0000"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg-rock)"/>
+  <g transform="translate(140, 65)">
+    <path d="M60 0 L60 110 C50 115 30 130 30 160 C30 190 50 200 40 215 C30 230 45 250 60 250 C75 250 90 230 80 215 C70 200 90 190 90 160 C90 130 70 115 60 110 Z" fill="#e61e32"/>
+    <circle cx="60" cy="180" r="16" fill="#191414"/>
+    <line x1="57" y1="0" x2="57" y2="180" stroke="#ffffff" stroke-width="2"/>
+    <line x1="63" y1="0" x2="63" y2="180" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  <rect x="30" y="315" width="340" height="52" rx="10" fill="#000000" opacity="0.75"/>
+  <text x="200" y="348" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">ROCK CLASSICS</text>
+</svg>
